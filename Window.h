@@ -69,8 +69,9 @@ public:
 	}
 
 	void show() {
-		if( hwnd_ )
+		if (hwnd_) {
 			ShowWindow(hwnd_, SW_SHOWNA);
+		}
 	}
 
 	void hide(){ ShowWindow(hwnd_, SW_HIDE); }
